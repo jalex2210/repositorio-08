@@ -2,11 +2,12 @@
     display: flex;
     padding-bottom: 94px;
     justify-content: space-between;
-
+    
     &__image{
         display: flex;
         position: absolute;
         width: 370px;
+        z-index: -1;
     }
 
     &__text {
@@ -21,6 +22,7 @@
         justify-content: center;
         align-items: center;
         width: 370px;
+        z-index: -1;
     }
 }
 @include screen-480{

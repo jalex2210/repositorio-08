@@ -11,7 +11,7 @@
             width: 696px;
             .hero__h1 {
                 color: $color-primary-white;
-                font-size: 44px;
+                font-size: 3.14em;
                 font-weight: 900;
                 letter-spacing: 0.06em;
                 line-height: 1.4;
@@ -22,7 +22,7 @@
                 background-color: $color-accent;
                 border: 5px solid $color-accent;
                 border-radius: 5px;
-                font-size: 16px;
+                font-size: 1.14em;
                 font-weight: 700;
                 line-height: 1.9;
                 cursor: pointer;
@@ -44,9 +44,6 @@
         url(/images/Background-Header480.jpeg);     
         .hero__title {
             width: 80%;
-            .hero__h1 {
-                font-size: 24px;
-            }
         }
     }
 }
