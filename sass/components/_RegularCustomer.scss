@@ -1,0 +1,56 @@
+.regular-customers {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 151px;
+    &__link {
+        background: $color-primary-white;
+        border-radius: 4px;
+        display: flex;
+        width: 170px;
+        height: 81px;
+        border: 1px solid #AFB1B8;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        fill: #AFB1B8;
+
+        .regular-customers__icon {
+            width: 106px;
+        }
+    }
+    &__link:hover,
+    &__link:focus {
+        border: 1px solid $color-accent;
+        fill: $color-accent;
+    }
+}
+
+@include screen-480{
+    .regular-customers{
+        flex-wrap: wrap;
+        padding-bottom: 60px;
+        @media (min-width: 660px){
+            gap: 60px;
+        }
+        &__link{
+            margin-bottom: 30px;
+            width: 210px;
+        }
+    }
+}
+
+@include screen-768 {
+    .regular-customers {
+        flex-wrap: wrap;
+        padding-bottom: 60px;
+
+        @media (min-width: 1114px) {
+            gap: 100px;
+        }
+
+        &__link {
+            margin-bottom: 30px;
+            width: 226px;
+        }
+    }
+}

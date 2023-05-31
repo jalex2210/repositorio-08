@@ -1,0 +1,61 @@
+.benefits{
+    display: flex;
+    padding-top: 82px;
+    justify-content: space-between;
+    gap: 40px;
+    &__column{
+        width: 270px;
+        .benefits__icon {
+            display: flex;
+            padding: 25px;
+            margin-bottom: 30px;
+            fill: $color-title;
+            border-radius: 4px;
+            border: none;
+            background-color: $color-background-gray;
+        }
+        .benefits__icon-svg {
+            height: 70px;
+        }
+        .benefits__title {
+            color: $color-title;
+            font-weight: 700;
+            line-height: 1.142;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .benefits__text {
+            line-height: 1.71;
+        }
+    }
+}
+
+@include screen-480{
+    .benefits{
+        .benefits__column{
+            width: 100%;
+        }
+        display: block;
+        .benefits__icon{
+            justify-content: center;
+            
+        }
+        .benefits__title{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }.benefits__text {
+            width: 100%;
+        }
+    }
+}
+
+@include screen-768{
+    .benefits{
+        flex-wrap: wrap;
+        gap: 30px;
+        &__column{
+            width: 354px;
+        }
+    }
+}

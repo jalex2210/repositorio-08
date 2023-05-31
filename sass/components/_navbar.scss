@@ -1,0 +1,29 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 209px;
+    &__link {
+        position: relative;
+        display: flex;
+        font-weight: 500;
+        line-height: 1.142;
+        letter-spacing: 0.02em;
+        color: $color-title;
+        margin-right: 50px;
+    }
+    &__current::after {
+        position: absolute;
+        content: '';
+        border-bottom: 4px solid rgba(33, 150, 243, 1);
+        ;
+        border-radius: 2px;
+        width: 100%;
+        top: 47px;
+    }
+    &__current,
+    &__link:hover,
+    &__link:focus {
+        color: $color-accent;
+    }
+}

@@ -1,0 +1,23 @@
+.logo__black,
+.logo__white,
+.logo {
+    color: $color-accent;
+    font-family: "Raleway", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-right: 93px;
+  }
+.logo__black{
+  color: $color-logo-black;
+}
+.logo__white{
+  color: $color-primary-white;
+}
+
+@include screen-768{
+  .logo__white,
+  .logo {
+      margin-right: 0;
+    }
+}

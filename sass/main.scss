@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import "node_modules/modern-normalize/modern-normalize.css";
+@import "./utils/variables";
+@import"./utils/mixin";
+@import "./components/logo","./components/benefits","./components/whatWeDo","./components/ourTeam";
+@import "./components/page-header","./components/navbar","./components/backdrop","./components/hero";
+@import "./components/socialNetworks","./components/RegularCustomer","./components/footer";
+@import "./components/headerMobile","./components/portfolio";
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+}
+body {
+    color: $color-primary-text;
+    background-color: $color-primary-white;
+    margin: auto;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+header {
+    border-bottom: 1px solid #ECECEC;
+}
+.title-h2 {
+    color: $color-title;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.166;
+    padding: 94px 0 50px;
+    text-align: center;
+}
+
+@include screen-480{
+    .container{
+        width: 100%;
+        padding: 24px 15px;
+    }
+}
+
+@include screen-768{
+    .container{
+        width: 100%;
+        padding: 24px 15px;
+    }
+}
+

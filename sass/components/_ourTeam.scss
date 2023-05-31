@@ -1,0 +1,74 @@
+.our-team {
+    background-color: $color-background-gray;
+    padding-bottom: 94px;
+    padding-top: 1px;
+    &__members{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        
+        .our-team__members-card{
+            background-color: $color-primary-white;
+            border-radius: opx opx 4px 4px;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+            text-align: center;
+
+            .our-team__photo{
+                width:270px;
+                height:260px;
+            }
+
+            .our-team__name {
+                color: $color-title;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 1.2;
+                text-align: center;
+                margin: 30px 0 10px;
+            }
+            .our-team__profession {
+                color: $color-primary-text;
+                font-size: 16px;
+                line-height: 1.187;
+            }
+        }
+    }
+}
+
+@include screen-480{
+    .our-team{
+        &__members{
+            display: block;
+            .our-team__members-card{
+                padding-bottom: 24px;
+                margin-top: 30px;
+                .our-team__photo{
+                    width: 450px;
+                    height: 460px;
+                }
+            }
+        }
+    }
+}
+
+@include screen-768{
+    .our-team{
+        &__members{
+        flex-wrap: wrap;
+        @media (min-width: 1152px){
+            gap: 60px;
+        }
+            .our-team__members-card {
+                    padding-bottom: 24px;
+                    margin-top: 30px;
+            
+                    .our-team__photo {
+                        width: 354px;
+                        height: 374px;
+                    }
+                }
+        }
+    }
+}
